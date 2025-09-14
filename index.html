@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/07e9e5aaca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Contact Form -->
+    <form>
+      <!-- Full Name -->
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name">
+        <span id="name-error"></span>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="+213 456 7890" id="contact-number">
+        <span id="phone-error"></span>
+      </div>
+
+      <!-- Email -->
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contact-mail">
+        <span id="email-error"></span>
+      </div>   
+
+      <!-- Message -->
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" id="contact-message"></textarea>
+        <span id="message-error"></span>
+      </div>
+
+      <!-- Submit Button -->
+      <button id="btn">Submit</button>
+      <span class="submit-error" id="submit-error"></span>
+    </form>
+  </div>
+</body>
+</html>
+
